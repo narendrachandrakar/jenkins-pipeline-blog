@@ -1,0 +1,22 @@
+{
+  "name": "jenkins-pipeline-blog",
+  "version": "1.0.0",
+  "description": "Example repository for a blog post about Jenkins pipelines",
+  "main": "src/index.js",
+  "repository": "https://github.com/codurance/jenkins-pipeline-blog",
+  "author": "Francesco Gigli <francesco.gigli@codurance.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "sinon": "^7.2.3",
+    "sinon-chai": "^3.3.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "mocha"
+  }
+}
