@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t jenkins-pipeline-blog:latest'
+                sh 'docker build -t jenkins-pipeline-blog:latest .'
             }
         }
 
