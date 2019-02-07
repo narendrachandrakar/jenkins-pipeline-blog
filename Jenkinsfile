@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t jenkins-pipeline-blog:latest .'
+                sh 'docker build -t codurance/jenkins-pipeline-blog:latest .'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'docker run jenkins-pipeline-blog:latest yarn test'
+                sh 'docker run codurance/jenkins-pipeline-blog:latest yarn test'
             }
         }
 
