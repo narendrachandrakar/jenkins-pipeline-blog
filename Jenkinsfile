@@ -19,7 +19,7 @@ pipeline {
                 branch 'master'
             }
             steps {
-                sh 'echo commands to do deployment go here'
+                sh 'docker push codurance/jenkins-pipeline-blog:latest'
             }
         }
     }
