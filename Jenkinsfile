@@ -13,7 +13,18 @@ pipeline {
                 sh 'docker run codurance/jenkins-pipeline-blog:latest yarn test'
             }
         }
-
+         stage('Example Deploy') {
+            when {
+               branch 'master'
+            }
+            input {
+                message "Deploy to production?"
+                id "simple-input"
+            }
+            steps {
+                echo 'Deploying'
+            }
+        }
         stage('Deploy') {
             when {
                 branch 'master'
