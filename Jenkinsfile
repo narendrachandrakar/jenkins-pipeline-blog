@@ -19,7 +19,8 @@ pipeline {
                 branch 'master'
             }
             steps {
-                sh 'docker push codurance/jenkins-pipeline-blog:latest'
+                sh 'docker tag codurance/jenkins-pipeline-blog:latest localhost:5000/react-app-demo2'
+                sh 'docker push localhost:5000/react-app-demo2'
             }
         }
     }
